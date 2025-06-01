@@ -266,7 +266,7 @@ const Portfolio = () => {
                   Get In Touch
                 </a>
                 <a
-                  href="https://github.com/ahmad-sultan"
+                  href="https://github.com/AhmadSultanMA"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 border border-blue-500 px-6 py-3 rounded-full hover:bg-blue-500/10 transition-all duration-300"
