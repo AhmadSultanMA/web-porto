@@ -40,8 +40,8 @@ export const skills = {
     "Flutter", "Laravel", "React Three Fiber", "Inertia.js",
   ],
   "AI/ML & Computer Vision": [
-    "YOLOv8", "YOLOv11", "MediaPipe", "MotionBERT",
-    "OpenCV", "TensorFlow", "Scikit-learn", "Vertex AI", "Hand4Whole"
+    "YOLOv8", "YOLOv11", "Instance Segmentation", "Pose-Guided Anchoring",
+    "MediaPipe", "MotionBERT", "OpenCV", "TensorFlow", "Scikit-learn", "Vertex AI",
   ],
   "Tools & Platforms": [
     "Visual Studio Code", "Android Studio", "GitHub", "Postman",
@@ -67,6 +67,17 @@ export const projects = [
     category: ["AI/ML", "Mobile"],
     link: "#",
     active: true,
+  },
+  {
+    title: "Multi-Stage PPE Detection System",
+    description:
+      "Undergraduate Thesis Project: \"Pengembangan Model Multi-Stage Object Detection Menggunakan YOLOv11 untuk Deteksi Kepatuhan Pemakaian Alat Pelindung Diri di Lingkungan Kerja Berisiko Tinggi\". Evaluated deep learning computer vision architectures for high-risk industrial safety monitoring. Conducted benchmark experiments comparing direct YOLO detection against instance segmentation with bounding box conversion and Pose-Guided Anchoring (PGA) for human keypoint ROI calibration.",
+    tech: ["YOLOv11", "Multi-Stage Detection", "Instance Segmentation", "Pose-Guided Anchoring (PGA)", "Python", "mAP Evaluation"],
+    date: "Feb 2026 - Jul 2026",
+    type: "Thesis Project",
+    category: ["AI/ML"],
+    link: "#",
+    active: false,
   },
   {
     title: "PPE Detection System",
