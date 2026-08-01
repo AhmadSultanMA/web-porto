@@ -72,16 +72,30 @@ const About = () => {
                 <h3 className="text-xl font-bold text-blue-400">Contact & Languages</h3>
               </div>
               <div className="space-y-2 mb-4">
-                {[
-                  { icon: <MapPin size={15} />, text: "Bekasi, Indonesia" },
-                  { icon: <Phone size={15} />, text: "+62 81210011827" },
-                  { icon: <Mail size={15} />, text: "ahmad.irza18@gmail.com" },
-                ].map(({ icon, text }, i) => (
-                  <div key={i} className="flex items-center gap-3 text-sm">
-                    <span className="text-blue-400 shrink-0">{icon}</span>
-                    <span className="text-gray-300">{text}</span>
-                  </div>
-                ))}
+                <div className="flex items-center gap-3 text-sm">
+                  <MapPin className="text-blue-400 shrink-0" size={15} />
+                  <span className="text-gray-300">Bekasi, Indonesia</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm">
+                  <Phone className="text-blue-400 shrink-0" size={15} />
+                  <a
+                    href="https://wa.me/6281210011827"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-blue-300 transition-colors"
+                  >
+                    +62 81210011827 (WhatsApp)
+                  </a>
+                </div>
+                <div className="flex items-center gap-3 text-sm">
+                  <Mail className="text-blue-400 shrink-0" size={15} />
+                  <a
+                    href="mailto:ahmad.irza18@gmail.com"
+                    className="text-gray-300 hover:text-blue-300 transition-colors"
+                  >
+                    ahmad.irza18@gmail.com
+                  </a>
+                </div>
                 <div className="flex items-center gap-3 text-sm">
                   <Linkedin className="text-blue-400 shrink-0" size={15} />
                   <a

@@ -10,10 +10,11 @@ const contactLinks = [
     text: "ahmad.irza18@gmail.com",
   },
   {
-    href: "tel:+6281210011827",
+    href: "https://wa.me/6281210011827",
     icon: <Phone size={28} />,
-    label: "Phone",
+    label: "WhatsApp",
     text: "+62 81210011827",
+    external: true,
   },
   {
     href: "https://github.com/AhmadSultanMA",
