@@ -47,7 +47,11 @@ const Projects = () => {
   const filteredProjects =
     activeFilter === "All"
       ? projects
-      : projects.filter((p) => p.category === activeFilter);
+      : projects.filter((p) =>
+          Array.isArray(p.category)
+            ? p.category.includes(activeFilter)
+            : p.category === activeFilter
+        );
 
   return (
     <section id="projects" className="py-20 px-4">
@@ -75,47 +79,55 @@ const Projects = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
-          {filteredProjects.map((project, index) => (
-            <div
-              key={index}
-              className={`relative bg-gradient-to-br from-slate-800/90 to-slate-700/90 rounded-2xl p-6 border backdrop-blur-sm hover:-translate-y-1 transition-all duration-300 group flex flex-col ${
-                project.active
-                  ? "border-cyan-400/60 shadow-lg shadow-cyan-500/10"
-                  : "border-blue-500/30 hover:border-blue-400/50"
-              }`}
-            >
-              {/* Active badge */}
-              {project.active && (
-                <div className="absolute -top-3 left-4">
-                  <span className="flex items-center gap-1.5 bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
-                    <span className="w-1.5 h-1.5 bg-white rounded-full animate-pulse" />
-                    Currently Working On
-                  </span>
-                </div>
-              )}
+          {filteredProjects.map((project, index) => {
+            const categories = Array.isArray(project.category)
+              ? project.category
+              : [project.category];
 
-              <div className="flex items-center justify-between mb-4 mt-1">
-                <span className="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-xs border border-blue-500/40">
-                  {project.type}
-                </span>
-                <div className="flex items-center gap-2">
-                  <span
-                    className={`text-xs px-2 py-0.5 rounded-full border ${categoryColors[project.category]}`}
-                  >
-                    {project.category}
+            return (
+              <div
+                key={index}
+                className={`relative bg-gradient-to-br from-slate-800/90 to-slate-700/90 rounded-2xl p-6 border backdrop-blur-sm hover:-translate-y-1 transition-all duration-300 group flex flex-col ${
+                  project.active
+                    ? "border-cyan-400/60 shadow-lg shadow-cyan-500/10"
+                    : "border-blue-500/30 hover:border-blue-400/50"
+                }`}
+              >
+                {/* Active badge */}
+                {project.active && (
+                  <div className="absolute -top-3 left-4">
+                    <span className="flex items-center gap-1.5 bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                      <span className="w-1.5 h-1.5 bg-white rounded-full animate-pulse" />
+                      Currently Working On
+                    </span>
+                  </div>
+                )}
+
+                <div className="flex items-center justify-between mb-4 mt-1 flex-wrap gap-2">
+                  <span className="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-xs border border-blue-500/40">
+                    {project.type}
                   </span>
-                  {project.link !== "#" && (
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-blue-400 transition-colors"
-                    >
-                      <ExternalLink size={18} />
-                    </a>
-                  )}
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    {categories.map((cat) => (
+                      <span
+                        key={cat}
+                        className={`text-xs px-2 py-0.5 rounded-full border ${categoryColors[cat] || "bg-blue-500/20 text-blue-300 border-blue-500/40"}`}
+                      >
+                        {cat}
+                      </span>
+                    ))}
+                    {project.link !== "#" && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-blue-400 transition-colors"
+                      >
+                        <ExternalLink size={18} />
+                      </a>
+                    )}
+                  </div>
                 </div>
-              </div>
 
               <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
                 {project.title}
@@ -138,7 +150,8 @@ const Projects = () => {
                 {project.date}
               </div>
             </div>
-          ))}
+          );
+        })}
         </div>
       </div>
     </section>
