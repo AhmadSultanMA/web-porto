@@ -116,7 +116,7 @@ export const projects = [
     title: "USMAN Apps",
     description:
       "Dual-platform mobile application built for the MTQMN Competition, securing national runner-up. Designed to help MSMEs (small businesses) calculate HPP (Harga Pokok Penjualan / Cost of Goods Sold) accurately. Built two separate apps — one for mentors to manage and monitor business data, and one for users (UMKM owners) to input and track production costs. Successfully implemented all UI/UX designs and integrated RESTful APIs across both applications.",
-    tech: ["Flutter", "Dart", "REST API", "UI/UX"],
+    tech: ["Flutter", "Dart", "REST API"],
     date: "Sep 2024 - Nov 2024",
     type: "Competition Project",
     category: "Mobile",
@@ -127,10 +127,21 @@ export const projects = [
     title: "NgampusYuk Apps",
     description:
       "An intelligent Android application designed to empower prospective university students in making smarter, data-driven decisions when selecting their ideal PTN (State University) and academic major. Users can input their try-out scores and the app automatically matches them with compatible universities and study programs based on historical passing grade data. Features an in-depth comparison tool covering key metrics such as UKT (tuition fees), institutional accreditation, major rankings, and facilities giving students a comprehensive view to confidently choose the best fit. Achieved 100% implementation of all planned features, UI/UX, and Firebase-powered backend.",
-    tech: ["Kotlin", "Firebase", "Android SDK", "UI/UX"],
+    tech: ["Kotlin", "Firebase", "Android SDK"],
     date: "Feb 2024 - Mar 2024",
     type: "Community Project",
     category: "Mobile",
+    link: "#",
+    active: false,
+  },
+  {
+    title: "BEM FILKOM 2023 Website",
+    description:
+      "Served as Front-End Developer and Team Lead for the official BEM FILKOM 2023 website at Faculty of Computer Science. Guided the development team to meet project deadlines, collaborated with PIT staff to build a responsive React.js web platform, and presented the final product to stakeholders.",
+    tech: ["React.js", "Front-End", "Team Lead"],
+    date: "Feb 2023 - Oct 2023",
+    type: "Organization Project",
+    category: "Web",
     link: "#",
     active: false,
   },
