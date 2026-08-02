@@ -183,7 +183,7 @@ export const projects = [
     description:
       "Web-based sports facility and equipment rental platform. Engineered the backend with Laravel, integrated Midtrans payment gateway for automated transaction processing, and optimized database schemas to prevent double-booking issues.",
     tech: ["Laravel", "PHP", "Midtrans", "MySQL"],
-    date: "Dec 2023 - Mar 2024",
+    date: "Mar 2023 - Apr 2024",
     type: "Community Project",
     category: "Web",
     link: "#",
@@ -249,6 +249,20 @@ export const activities = [
     year: "2024",
     description:
       "Led the Information Technology division for Brawijaya University's freshman orientation program.",
+  },
+  {
+    role: "Teaching Assistant for OOP (Java)",
+    org: "FILKOM UB",
+    year: "2024",
+    description:
+      "Assisted students in Object-Oriented Programming coursework in Java, facilitating lab sessions and evaluating assignments.",
+  },
+  {
+    role: "App Developer",
+    org: "RAION Community",
+    year: "2024",
+    description:
+      "Developed mobile applications and collaborated within the student game & app development studio community.",
   },
   {
     role: "IT Development Staff",
