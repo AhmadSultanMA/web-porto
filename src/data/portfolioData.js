@@ -36,7 +36,7 @@ export const skills = {
     "Golang", "Python", "PHP", "SQL", "HTML/CSS", "C++",
   ],
   "Frameworks & Libraries": [
-    "React.js", "React Native", "Next.js", "Vue.js",
+    "React.js", "React Native", "React Native Web", "Next.js", "Vue.js",
     "Flutter", "Laravel", "React Three Fiber", "Inertia.js",
   ],
   "AI/ML & Computer Vision": [
@@ -67,6 +67,28 @@ export const projects = [
     category: ["AI/ML", "Mobile"],
     link: "#",
     active: true,
+  },
+  {
+    title: "MarketStack-RN",
+    description:
+      "Mobile application (React Native CLI) for real-time global stock market data monitoring powered by Marketstack REST API. Features End-of-Day stock prices (open/close, high/low, volume, and % change) for global stocks, live ticker/issuer search, world stock exchange directory (MIC code, country, time zone), dynamic custom API key configuration without rebuilding, and an automated mock data fallback system during offline states or API errors to prevent crashes.",
+    tech: ["React Native CLI", "REST API", "Marketstack API", "JavaScript", "Axios"],
+    date: "2025",
+    type: "Personal Project",
+    category: "Mobile",
+    link: "#",
+    active: false,
+  },
+  {
+    title: "Weather App RN",
+    description:
+      "Cross-platform weather application (Android/iOS via React Native CLI, and Web via React Native Web + Vite) integrated with StormGlass REST API using Axios. Features location search & geocoding, comprehensive weather metrics, horizontal scrolling hourly forecast, 30-minute local caching, and a daily API quota counter for rate-limit optimization.",
+    tech: ["React Native CLI", "React Native Web", "Vite", "Axios"],
+    date: "2025",
+    type: "Personal Project",
+    category: ["Mobile", "Web"],
+    link: "#",
+    active: false,
   },
   {
     title: "Multi-Stage PPE Detection System",
