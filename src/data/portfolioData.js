@@ -18,15 +18,16 @@ export const sectionIds = [
 ];
 
 export const typingPhrases = [
-  "Software Engineer",
+  "AI/ML Engineer",
+  "Computer Vision Specialist",
+  "AI System Architect",
   "Full-Stack Developer",
-  "AI & Computer Vision Engineer",
-  "Mobile Developer",
 ];
 
 export const stats = [
-  { value: "3.83", label: "GPA", suffix: "/4.00" },
-  { value: "Top 100", label: "Google Challenge", suffix: "" },
+  { value: "6+", label: "AI/CV Projects Delivered", suffix: "" },
+  { value: "0.708", label: "mAP Thesis Model", suffix: "" },
+  { value: "3.84", label: "GPA", suffix: "/4.00" },
 ];
 
 export const skills = {
@@ -66,28 +67,6 @@ export const projects = [
     category: ["AI/ML", "Mobile"],
     link: "#",
     active: true,
-  },
-  {
-    title: "MarketStack-RN",
-    description:
-      "Mobile application (React Native CLI) for real-time global stock market data monitoring powered by Marketstack REST API. Features End-of-Day stock prices (open/close, high/low, volume, and % change) for global stocks, live ticker/issuer search, world stock exchange directory (MIC code, country, time zone), dynamic custom API key configuration without rebuilding, and an automated mock data fallback system during offline states or API errors to prevent crashes.",
-    tech: ["React Native CLI", "REST API", "Marketstack API"],
-    date: "2026",
-    type: "Personal Project",
-    category: "Mobile",
-    link: "#",
-    active: false,
-  },
-  {
-    title: "Weather App RN",
-    description:
-      "Cross-platform weather application (Android/iOS via React Native CLI, and Web via React Native Web + Vite) integrated with StormGlass REST API using Axios. Features location search & geocoding, comprehensive weather metrics, horizontal scrolling hourly forecast, 30-minute local caching, and a daily API quota counter for rate-limit optimization.",
-    tech: ["React Native CLI", "React Native Web", "Vite", "Axios", "StormGlass REST API"],
-    date: "2026",
-    type: "Personal Project",
-    category: ["Mobile", "Web"],
-    link: "#",
-    active: false,
   },
   {
     title: "Multi-Stage PPE Detection System",
@@ -130,6 +109,39 @@ export const projects = [
     date: "Sep 2024 - Nov 2024",
     type: "Course Assignment",
     category: ["Mobile", "AI/ML"],
+    link: "#",
+    active: false,
+  },
+  {
+    title: "UrDENTIST APPS",
+    description:
+      "Top 100 Google Solution Challenge 2024 globally. Mobile app for dental health with caries detection, treatment recommendations, and daily oral hygiene tasks. Integrated ML APIs for automated caries detection from user-uploaded images.",
+    tech: ["Flutter", "Dart", "Machine Learning"],
+    date: "Dec 2023 - Mar 2024",
+    type: "Google Solution Challenge",
+    category: ["Mobile", "AI/ML"],
+    link: "#",
+    active: false,
+  },
+  {
+    title: "MarketStack-RN",
+    description:
+      "Mobile application (React Native CLI) for real-time global stock market data monitoring powered by Marketstack REST API. Features End-of-Day stock prices (open/close, high/low, volume, and % change) for global stocks, live ticker/issuer search, world stock exchange directory (MIC code, country, time zone), dynamic custom API key configuration without rebuilding, and an automated mock data fallback system during offline states or API errors to prevent crashes.",
+    tech: ["React Native CLI", "REST API", "Marketstack API"],
+    date: "2026",
+    type: "Personal Project",
+    category: "Mobile",
+    link: "#",
+    active: false,
+  },
+  {
+    title: "Weather App RN",
+    description:
+      "Cross-platform weather application (Android/iOS via React Native CLI, and Web via React Native Web + Vite) integrated with StormGlass REST API using Axios. Features location search & geocoding, comprehensive weather metrics, horizontal scrolling hourly forecast, 30-minute local caching, and a daily API quota counter for rate-limit optimization.",
+    tech: ["React Native CLI", "React Native Web", "Vite", "Axios", "StormGlass REST API"],
+    date: "2026",
+    type: "Personal Project",
+    category: ["Mobile", "Web"],
     link: "#",
     active: false,
   },
@@ -185,17 +197,6 @@ export const projects = [
     date: "Jul 2024 - Aug 2024",
     type: "KKN Project",
     category: "Web",
-    link: "#",
-    active: false,
-  },
-  {
-    title: "UrDENTIST APPS",
-    description:
-      "Top 100 Google Solution Challenge 2024 globally. Mobile app for dental health with caries detection, treatment recommendations, and daily oral hygiene tasks. Integrated ML APIs for automated caries detection from user-uploaded images.",
-    tech: ["Flutter", "Dart", "Machine Learning"],
-    date: "Dec 2023 - Mar 2024",
-    type: "Google Solution Challenge",
-    category: ["Mobile", "AI/ML"],
     link: "#",
     active: false,
   },

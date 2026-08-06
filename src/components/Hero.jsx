@@ -63,9 +63,7 @@ const Hero = ({ scrollToSection }) => {
             </div>
 
             <p className="text-base text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Informatics Engineering graduate from Brawijaya University specializing in
-              Software Engineering, Full-Stack Development, and AI/Computer Vision — passionate
-              about building robust, scalable digital products and intelligent systems.
+              Informatics Engineering graduate from Brawijaya University specializing in AI &amp; Computer Vision with hands-on expertise in YOLO-based object detection, pose estimation, and real-time CV pipeline deployment. Leverages full-stack development as a supporting skill to seamlessly integrate, deploy, and scale intelligent vision models into production applications.
             </p>
 
             {/* CTA Buttons */}
