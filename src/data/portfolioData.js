@@ -26,7 +26,6 @@ export const typingPhrases = [
 
 export const stats = [
   { value: "3.83", label: "GPA", suffix: "/4.00" },
-  { value: "6+", label: "Years Coding", suffix: "" },
   { value: "Top 100", label: "Google Challenge", suffix: "" },
 ];
 
